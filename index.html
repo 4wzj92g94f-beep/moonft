@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#f5d9a8">
+  <title>KOMARU SHOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><strong>KOMARU SHOP</strong><small>магазин Мяовл и Комару</small></div>
+    <div class="stats"><span>₸ <b id="money">2500</b></span><span>Репутация <b id="rep">50</b></span></div>
+  </header>
+  <main>
+    <section class="shop" aria-label="Игровой магазин">
+      <div class="sign">KOMARU SHOP</div>
+      <div class="shelf shelf-one">
+        <div class="product-print print-meow">ПРИНТ<br><b>Мяовл</b></div>
+        <div class="product-print print-komaru">ПРИНТ<br><b>Комару</b></div>
+        <div class="product-print print-meow">ЗНАЧОК<br><b>Мяовл</b></div>
+      </div>
+      <div class="shelf shelf-two">
+        <div class="product-print print-komaru">ПРИНТ<br><b>Комару</b></div>
+        <div class="product-print print-meow">ЗНАЧОК<br><b>Мяовл</b></div>
+        <div class="product-print print-komaru">ПРИНТ<br><b>Комару</b></div>
+      </div>
+      <div class="door"><span>ВХОД</span></div>
+      <div id="customers" class="customers"></div>
+      <div class="counter"></div>
+      <div id="seller" class="seller"><div class="head">🙂</div><b>Продавец</b></div>
+      <div class="cash-register">▣<small>КАССА</small></div>
+      <div class="floor"></div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><h1>Торговля</h1><span id="phase">Магазин открыт</span></div>
+      <p id="message">Покупатель скоро зайдёт и осмотрит товары.</p>
+      <div id="dialog" class="dialog hidden">
+        <b id="customer-name"></b>
+        <p id="question"></p>
+        <div id="price-area"></div>
+        <div class="actions" id="actions"></div>
+      </div>
+      <div id="roulette" class="roulette hidden">
+        <div class="wheel" id="wheel">●</div>
+        <b id="roulette-result">Проверяем интерес покупателя…</b>
+      </div>
+      <div class="inventory">
+        <h2>Товары на полках</h2>
+        <div class="inventory-row"><span>Значок с принтом Мяовл</span><b>500 ₸</b></div>
+        <div class="inventory-row"><span>Значок с принтом Комару</span><b>600 ₸</b></div>
+        <div class="inventory-row"><span>Принт Мяовл</span><b>900 ₸</b></div>
+        <div class="inventory-row"><span>Принт Комару</span><b>1000 ₸</b></div>
+      </div>
+      <button id="next" class="primary">Продолжить</button>
+      <p class="hint">Прототип: цены и вероятности демонстрационные. Изображения оригинальных принтов нужно вставить из присланных тобой файлов.</p>
+    </section>
+  </main>
+  <script src="js/customers.js"></script>
+  <script src="js/economy.js"></script>
+  <script src="js/roulette.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
